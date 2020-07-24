@@ -1,0 +1,37 @@
+<view class="cartPage">
+    <view class="address">
+        <view class="leftInfo">
+            <text>收货人:{{userAddress.userName}}</text>
+            <text>{{userAddress.all}}</text>
+        </view>
+        <view class="rightInfo">
+            <text>{{userAddress.telNumber}}</text>
+        </view>
+    </view>
+    
+    <view class="shopCart">
+        购物车
+    </view>
+
+    <view class="commodityList">
+        <view class="commodity_item" wx:for="{{cartArr}}" wx:key="index">
+            <view class="commodity_thumbnail">
+                <image src="{{item.goods_small_logo}}" mode="widthFix" />
+            </view>
+            <view class="commodity_info">
+                <view class="commoddity_name">{{item.goods_name}}</view>
+                <view class="commodity_number">
+                    <text>￥{{item.goods_price}}</text>
+                    <view class="goods_num">X {{item.num}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="btm_tool">
+        <view class="tool_item">
+            合计:<text>￥{{totalPrice}}</text>
+        </view>
+        <navigator url="/pages/auth/auth" class="tool_item">结算({{totalGoodsNum}})</navigator>
+    </view>
+</view>

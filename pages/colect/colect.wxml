@@ -1,0 +1,13 @@
+ <view class="commodityList">
+        <view class="commodity_item" wx:for="{{arrCollect}}" wx:key="index">
+            <view class="commodity_thumbnail">
+                <image src="{{item.goods_small_logo ? item.goods_small_logo : 'http://image5.suning.cn/uimg/b2c/newcatentries/0070175526-000000000781938256_1_400x400.jpg'}}" mode="widthFix" />
+            </view>
+            <view class="commodity_info">
+                <view class="commoddity_name">{{item.goods_name}}</view>
+                <view class="commodity_number">
+                    <text>￥{{item.goods_price}}</text>
+                </view>
+            </view>
+        </view>
+</view>

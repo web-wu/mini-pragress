@@ -1,0 +1,154 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": false,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.11.3",
+	"appid": "wxa59e61785a8e567a",
+	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/classify/classify",
+					"pathName": "pages/classify/classify",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/classify/classify",
+					"pathName": "pages/classify/classify",
+					"query": "cid=5",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/goods_list/goods_list",
+					"pathName": "pages/goods_list/goods_list",
+					"query": "cid=5",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/goods_detail/goods_detail",
+					"pathName": "pages/goods_detail/goods_detail",
+					"query": "goods_id=123",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shop_cart/shop_cart",
+					"pathName": "pages/shop_cart/shop_cart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pay/pay",
+					"pathName": "pages/pay/pay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/colect/colect",
+					"pathName": "pages/colect/colect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/feedback/feedback",
+					"pathName": "pages/feedback/feedback",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/feedback/feedback",
+					"pathName": "pages/feedback/feedback",
+					"scene": null
+				}
+			]
+		}
+	}
+}

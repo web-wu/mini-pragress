@@ -1,0 +1,4 @@
+<button open-type="getUserInfo" type="primary">
+    授权
+</button>
+  

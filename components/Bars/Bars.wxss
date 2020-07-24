@@ -1,0 +1,17 @@
+.Bar_title{
+    height: 80rpx;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.item{
+    flex: 1;
+    padding: 10rpx;
+    text-align: center;
+    color: #123456;
+    border-bottom: 1rpx solid #ccc;
+}
+.active{
+    color: #00ff46;
+    border-bottom: 2rpx solid #00ff46;
+}

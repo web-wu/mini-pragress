@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "SearchInput": "../../components/SearchInput/SearchInput",
+    "Bars": "../../components/Bars/Bars"
+  },
+  "navigationBarTitleText": "商品列表",
+  "enablePullDownRefresh": true
+}

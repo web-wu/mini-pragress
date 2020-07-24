@@ -1,0 +1,48 @@
+<view class="cartPage">
+    <view class="address_btn" wx:if="{{!userAddress.userName}}">
+        <button bindtap="handleAddress" plain>+ 添加收货地址</button>
+    </view>
+    <view class="address" wx:else>
+        <view class="leftInfo">
+            <text>收货人:{{userAddress.userName}}</text>
+            <text>{{userAddress.all}}</text>
+        </view>
+        <view class="rightInfo">
+            <text>{{userAddress.telNumber}}</text>
+        </view>
+    </view>
+
+    <view class="commodityList">
+        <view class="commodity_item" wx:for="{{cartArr}}" wx:key="index">
+            <checkbox-group bindchange="handleCheckedChange" data-id="{{item.goods_id}}">
+                <checkbox checked="{{item.checked}}"></checkbox>
+            </checkbox-group>
+            <view class="commodity_thumbnail">
+                <image src="{{item.goods_small_logo}}" mode="widthFix" />
+            </view>
+            <view class="commodity_info">
+                <view class="commoddity_name">{{item.goods_name}}</view>
+                <view class="commodity_number">
+                    <text>￥{{item.goods_price}}</text>
+                    <view class="commodity_num">
+                    <view class="num_edit" data-id="{{item.goods_id}}" data-optionNum="{{-1}}" bindtap="handleOptionNumber">-</view>
+                    <view class="goods_num">{{item.num}}</view>
+                    <view class="num_edit" data-id="{{item.goods_id}}" data-optionNum="{{1}}" bindtap="handleOptionNumber">+</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="btm_tool">
+        <view class="tool_item">
+            <checkbox-group bindchange="handleAllChecked">
+                <checkbox checked="{{allChecked}}"></checkbox>全选
+            </checkbox-group>
+        </view>
+        <view class="tool_item">
+            合计:<text>￥{{totalPrice}}</text>
+        </view>
+        <navigator url="/pages/pay/pay" class="tool_item">结算({{totalGoodsNum}})</navigator>
+    </view>
+</view>

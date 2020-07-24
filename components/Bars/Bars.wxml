@@ -1,0 +1,10 @@
+<view class="Bar">
+    <view class="Bar_title">
+        <view class="item {{item.isActive ? 'active' : ''}}" wx:for="{{bars}}" wx:key="id" bindtap="handleTapItem" data-index="{{index}}">
+            {{item.name}}
+        </view>
+    </view>
+    <view class="Bars_content">
+        <slot></slot>
+    </view>
+</view>

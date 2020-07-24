@@ -1,0 +1,74 @@
+<view class="minePage">
+    <view class="my_bg" wx:if="{{userInfo.nickName}}">
+        <image class="avatar_bg" src="{{userInfo.avatarUrl}}" mode="widthFix" />
+        <view class="avatar">
+            <image src="{{userInfo.avatarUrl}}" mode="aspectFit" />
+        </view>
+        <view class="userName">{{userInfo.nickName}}</view>
+    </view>
+    <view class="login" wx:else>
+        <navigator url="/pages/login/login" class="login_btn">登录</navigator>
+    </view>
+    
+    <view class="my_main">
+        <view class="goods_mune">
+            <view class="item">
+                <text class="num">2</text>
+                <text>喜欢的商品</text>
+            </view>
+            <navigator url="/pages/colect/colect" class="item">
+                <text class="num">{{collectNumber}}</text>
+                <text>收藏的商品</text>
+            </navigator>
+            <view class="item">
+                <text class="num">2</text>
+                <text>关注的商品</text>
+            </view>
+            <view class="item">
+                <text class="num">2</text>
+                <text>我的足迹</text>
+            </view>
+        </view>
+        <view class="goods_order">
+            <view class="order_title">我的订单</view>
+            <view class="order_mune">
+                <navigator url="/pages/order/order">
+                    <text class="iconfont icon-ding_dan"></text>
+                    <text>全部订单</text>
+                </navigator>
+                <navigator url="">
+                    <text class="iconfont icon-fukuantongzhi"></text>
+                    <text>代付款</text>
+                </navigator>
+                <navigator url="">
+                    <text class="iconfont icon-receipt-address"></text>
+                    <text>待收货</text>
+                </navigator>
+                <navigator url="">
+                    <text class="iconfont icon-tuihuotuikuan_dianpu"></text>
+                    <text>退款/退货</text>
+                </navigator>
+            </view>
+            <view class="order_address">
+                收货地址管理
+            </view>
+
+            <view class="system_server">
+                <view class="contact_kefu">
+                    <text>联系客服</text>
+                    <text>400-618-4000</text>
+                </view>
+                <navigator url="/pages/feedback/feedback" class="feedback">
+                    意见反馈
+                </navigator>
+                <view class="about_us">
+                    关于我们
+                </view>
+            </view>
+
+            <view class="tuijian">
+                把应用推荐给他人
+            </view>
+        </view>
+    </view>
+</view>

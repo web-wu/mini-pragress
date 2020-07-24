@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/shop_cart/shop_cart",
+    "pages/mine/mine",
+    "pages/goods_list/goods_list",
+    "pages/goods_detail/goods_detail",
+    "pages/colect/colect",
+    "pages/order/order",
+    "pages/search/search",
+    "pages/user/user",
+    "pages/feedback/feedback",
+    "pages/login/login",
+    "pages/auth/auth", 
+    "pages/pay/pay"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#123456",
+    "navigationBarTitleText": "易良盛优购",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#ff2d4a",
+    "selectedColor": "#00ff46",
+    "backgroundColor": "#123456",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/home-o.png",
+        "selectedIconPath": "icon/home.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "icon/category-o.png",
+        "selectedIconPath": "icon/category.png"
+      },
+      {
+        "pagePath": "pages/shop_cart/shop_cart",
+        "text": "购物车",
+        "iconPath": "icon/cart-o.png",
+        "selectedIconPath": "icon/cart.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icon/my-o.png",
+        "selectedIconPath": "icon/my.png"
+      }
+    ]
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

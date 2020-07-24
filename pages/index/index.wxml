@@ -1,0 +1,33 @@
+<view class="page_index">
+	<SearchInput></SearchInput>
+
+	<view class="swiper">
+		<swiper indicator-dots indicator-color="#fff" autoplay circular>
+			<swiper-item wx:for="{{bannerList}}" wx:key="goods_id">
+				<navigator url="{{item.navigator_url}}" open-type="navigate">
+					<image src="{{item.image_src}}" lazy-load="true" mode="widthFix" />
+				</navigator>
+			</swiper-item>
+		</swiper>
+	</view>
+
+	<view class="navBar">
+		<navigator url="{{item.navigator_url}}" open-type="switchTab" wx:for="{{navBarList}}" wx:key="name">
+			<image src="{{item.image_src}}" lazy-load="true" mode="widthFix" />
+		</navigator>
+	</view>
+
+	<view class="infoBar">
+		<view class="floor_group" wx:for="{{infoBarData}}" wx:for-item="item1" wx:for-index="index1" wx:key="index1">
+			<view class="floor_title">
+				<image src="{{item1.floor_title.image_src}}" lazy-load="true" mode="widthFix"  />
+			</view>
+			<view class="floor_content">
+				<navigator url="{{item2.navigator_url}}" wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2">
+					<image src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}" lazy-load="true" />
+				</navigator>
+			</view>
+		</view>
+	</view>
+</view>
+

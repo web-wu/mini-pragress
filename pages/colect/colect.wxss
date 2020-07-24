@@ -1,0 +1,63 @@
+.commodityList {
+  border-top: 5rpx solid #123456;
+  padding: 10rpx 10rpx 150rpx;
+  font-size: 28rpx;
+  color: #123456;
+}
+.commodityList .commodity_item {
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+.commodityList .commodity_item checkbox-group {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commodityList .commodity_item .commodity_thumbnail {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commodityList .commodity_item .commodity_thumbnail image {
+  width: 80%;
+}
+.commodityList .commodity_item .commodity_info {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.commodityList .commodity_item .commodity_info .commoddity_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.commodityList .commodity_item .commodity_info .commodity_number {
+  display: flex;
+  justify-content: space-between;
+}
+.commodityList .commodity_item .commodity_info .commodity_number .commodity_num {
+  display: flex;
+}
+.commodityList .commodity_item .commodity_info .commodity_number .commodity_num .num_edit {
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  border: 1rpx solid #123456;
+}
+.commodityList .commodity_item .commodity_info .commodity_number .commodity_num .goods_num {
+  display: flex;
+  align-items: center;
+  width: 55rpx;
+  height: 55rpx;
+  justify-content: center;
+}
+.commodityList .commodity_item .commodity_info .commodity_number text {
+  display: flex;
+  align-items: center;
+  color: #00ff46;
+}

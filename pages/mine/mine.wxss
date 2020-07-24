@@ -1,0 +1,116 @@
+.minePage {
+  background-color: #edece8;
+  padding-bottom: 50rpx;
+  height: 100%;
+}
+.login {
+  height: 45vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid #123456;
+}
+.login .login_btn {
+  border: 1rpx solid #123456;
+  padding: 20rpx;
+  color: #123456;
+  text-align: center;
+}
+.my_bg {
+  position: relative;
+  height: 45vh;
+  overflow: hidden;
+}
+.my_bg .avatar_bg {
+  width: 100%;
+  filter: blur(10rpx);
+}
+.my_bg .avatar {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+}
+.my_bg .avatar image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.my_bg .userName {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.my_main {
+  width: 90%;
+  margin: 0 auto;
+  color: #123456;
+  font-size: 28rpx;
+}
+.my_main .goods_mune {
+  display: flex;
+  height: 100rpx;
+  padding: 10rpx 0;
+  transform: translateY(-50%);
+  background-color: #fff;
+}
+.my_main .goods_mune .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.my_main .goods_order .order_title {
+  padding: 10rpx;
+  background-color: #fff;
+}
+.my_main .goods_order .order_mune {
+  display: flex;
+  margin: 20rpx 0;
+}
+.my_main .goods_order .order_mune navigator {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx 0;
+  background-color: #fff;
+}
+.my_main .goods_order .order_mune navigator .iconfont {
+  color: #ff2d4a;
+}
+.my_main .goods_order .order_address {
+  padding: 10rpx;
+  background-color: #fff;
+}
+.my_main .system_server {
+  margin: 20rpx 0;
+}
+.my_main .system_server .contact_kefu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx;
+  background-color: #fff;
+}
+.my_main .system_server .feedback {
+  padding: 10rpx;
+  border-top: 2rpx solid #ccc;
+  border-bottom: 2rpx solid #ccc;
+  background-color: #fff;
+}
+.my_main .system_server .about_us {
+  padding: 10rpx;
+  background-color: #fff;
+}
+.my_main .tuijian {
+  padding: 10rpx;
+  background-color: #fff;
+}

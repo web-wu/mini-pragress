@@ -1,0 +1,74 @@
+page {
+  background-color: #ccc;
+  height: 100%;
+}
+.tab {
+  height: 90rpx;
+  display: flex;
+  color: #123456;
+  background-color: #fff;
+}
+.tab .tab_item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab .active {
+  border-bottom: 1rpx solid #123456;
+}
+.main {
+  color: #123456;
+}
+.main .title {
+  height: 90rpx;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.main .classify_item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .classify_item text {
+  width: 30%;
+  padding: 10rpx;
+  text-align: center;
+  background-color: #fff;
+  margin: 12rpx;
+}
+.main .requent {
+  margin: 20rpx;
+  background-color: #fff;
+}
+.main .requent textarea {
+  width: 100%;
+  padding: 10rpx;
+  min-height: 200rpx;
+}
+.main .requent .upimg {
+  width: 100%;
+  padding: 10rpx;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.main .requent .upimg .img_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90rpx;
+  height: 90rpx;
+  font-size: 40rpx;
+  text-align: center;
+  border: 1rpx solid #123456;
+}
+.main .submit_btn_wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.main .submit_btn_wrap button {
+  width: 30%;
+}

@@ -1,0 +1,52 @@
+page {
+  height: 100%;
+}
+page .classifyPage {
+  height: 100%;
+}
+page .classifyPage .classify {
+  width: 100%;
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+page .classifyPage .classify .leftMune {
+  width: 25%;
+}
+page .classifyPage .classify .leftMune .muneItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  font-size: 30rpx;
+  color: #123456;
+  border-bottom: 1px solid #ddd;
+}
+page .classifyPage .classify .leftMune .active {
+  border-left: 10rpx solid #00ff36;
+  color: #00ff36;
+}
+page .classifyPage .classify .rightContent {
+  width: 75%;
+}
+page .classifyPage .classify .rightContent .classify_group .classiify_title {
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #123456;
+}
+page .classifyPage .classify .rightContent .classify_group .classify_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+page .classifyPage .classify .rightContent .classify_group .classify_content navigator {
+  width: 33.33%;
+  text-align: center;
+}
+page .classifyPage .classify .rightContent .classify_group .classify_content navigator image {
+  width: 50%;
+}
+page .classifyPage .classify .rightContent .classify_group .classify_content navigator .goods_name {
+  font-size: 20rpx;
+  color: #123456;
+}
